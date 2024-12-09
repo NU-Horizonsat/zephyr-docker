@@ -8,6 +8,10 @@ FROM ${BASE_IMAGE}
 ARG ZEPHYR_SDK_INSTALL_DIR
 ARG ZEPHYR_SDK_TOOLCHAINS
 
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8    
+
 RUN \
   apt-get -y update \
   && apt-get -y install --no-install-recommends \
